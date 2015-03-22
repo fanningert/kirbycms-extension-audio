@@ -22,5 +22,7 @@
   <?php if(!empty($wav)){ ?>
   <source src="<?php echo $wav; ?>" type="audio/wav"/>
   <?php } ?>
-  Your browser does not support the <code>audio</code> element.
+  <?php
+  echo $NoSupportMessage; 
+  ?>
 </audio>

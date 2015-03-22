@@ -1,10 +1,6 @@
-# KirbyText Extension - Audio
-
-*Version:* 0.3
+# KirbyCMS Extension - Audio
 
 Display a audio via the HTML5 audio tag.
-
-**IMPORTANT:** In the current version of Kirby (2.0.5) is a bug. So every file with a extension that has a number and a upper case letter can not be found. Here the [issue](https://github.com/getkirby/kirby/issues/158) on GitHub.
 
 ## Options
 
@@ -25,11 +21,20 @@ Display a audio via the HTML5 audio tag.
 ### with files of the page
 
 ```
-(audio: ogg: demo-audio.ogg mp3: demo-audio.mp3)
+(audio ogg: demo-audio.ogg mp3: demo-audio.mp3)
 ```
 
 ### with external urls
 
 ```
-(audio: ogg: http://demos.w3avenue.com/html5-unleashed-tips-tricks-and-techniques/demo-audio.ogg mp3: http://demos.w3avenue.com/html5-unleashed-tips-tricks-and-techniques/demo-audio.mp3)
+(audio ogg: http://demos.w3avenue.com/html5-unleashed-tips-tricks-and-techniques/demo-audio.ogg mp3: http://demos.w3avenue.com/html5-unleashed-tips-tricks-and-techniques/demo-audio.mp3)
+```
+
+### Extended version
+
+```
+(audio muted: true)
+(audio_source: demo-audio.ogg [type: audio/ogg] [media: screen and (min-width:320px)])
+(audio_source: demo-audio.mp3 [type: audio/mpeg] [media: screen])
+(/audio)
 ```

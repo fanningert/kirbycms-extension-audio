@@ -1,8 +1,8 @@
 {
     "name": "audio",
     "readable": "HTML5 Audio",
-    "version": "0.3",
-    "stable": true,
+    "version": "1.0",
+    "stable": false,
     "description": "Display a audio via the HTML5 audio tag.",
     "author": "Thomas Fanninger",
     "url": "http://thomas.fanninger.at"
