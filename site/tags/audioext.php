@@ -14,6 +14,7 @@
  */
 kirbytext::$tags['audioext'] = array(
   'attr' => array(
+    'm4a',
     'mp3',
     'ogg',
     'wav',
@@ -36,6 +37,7 @@ kirbytext::$tags['audioext'] = array(
 if ( kirby()->option('kirby.extension.audioext.audio_tag') == true ) {
 	kirbytext::$tags['audio'] = array(
 			'attr' => array(
+	 	    'm4a',
 		    'mp3',
 		    'ogg',
 		    'wav',
