@@ -24,6 +24,7 @@ class AudioExt {
 	const CAPTION_CLASS = 'caption_class';
 	const SOURCES = 'sources';
 	
+	const TYPE_M4A = 'audio/x-aac';
 	const TYPE_MP3 = 'audio/mpeg';
 	const TYPE_OGG = 'audio/ogg';
 	const TYPE_WAV = 'audio/wav';
@@ -213,8 +214,9 @@ class AudioExt {
 			}
 				
 			// Sources
-			$audioext->addSource ( $tag->attr ( 'ogg' ), AudioExt::TYPE_OGG );
+			$audioext->addSource ( $tag->attr ( 'm4a' ), AudioExt::TYPE_M4A );
 			$audioext->addSource ( $tag->attr ( 'mp3' ), AudioExt::TYPE_MP3 );
+			$audioext->addSource ( $tag->attr ( 'ogg' ), AudioExt::TYPE_OGG );
 			$audioext->addSource ( $tag->attr ( 'wav' ), AudioExt::TYPE_WAV );
 				
 			return $audioext->toHtml ();
